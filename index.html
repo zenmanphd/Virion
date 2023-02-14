@@ -97,7 +97,7 @@ a  {
           
         <h1><b><i>Welcome to Virion</i></b></h1>
         <a class="promo">minimalist web design by Andre' A. Bailey</a>
-        <audio autoplay><source src="whatluck.mp3" type="audio/mp3" style="display:none;"></audio>
+        <audio id="welcome" autoplay><source src="whatluck.mp3" type="audio/mp3" style="display:none;"></audio>
         <h2>Select A Test</h2>
         <br>
         <button onclick="playAudio()" type="button">system check</button>
@@ -217,7 +217,10 @@ a  {
                 </ul>
             </div>
             <script>
-              
+              const x = document.getElementById("welcome");
+              function playAudio(){
+                x.play();
+              }
             </script>
         </body>  
 </html>
