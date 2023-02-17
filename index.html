@@ -101,7 +101,7 @@ a  {
         
         <h2>Select A Test</h2>
         <br>
-        <button onclick="playAudio("welcome")" type="button">system check</button>
+        <button onclick="playAudio()" type="button">system check</button>
         <br>
         <br>
          <div class="dropdown">
@@ -218,14 +218,10 @@ a  {
                     <li></li>
                 </ul>
             </div>
-            <button onclick="playAudio("dilution")" type="button">system check</button>
+            <button onclick="playAudio()" type="button">system check</button>
             <audio id="dilution" autoplay><source src="dilution2.mp3" type="audio/mp3" style="display:none;"></audio>
             <script>
               const x = document.getElementById("welcome");
-              function playAudio(){
-                x.play();
-              }
-              const x = document.getElementById("dilution");
               function playAudio(){
                 x.play();
               }
