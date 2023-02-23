@@ -218,12 +218,16 @@ a  {
                     <li></li>
                 </ul>
             </div>
-            <button onclick="playAudio()" type="button">system check</button>
+            <button onclick="playAudio2()" type="button">system check</button>
             <audio id="dilution" autoplay><source src="dilution2.mp3" type="audio/mp3" style="display:none;"></audio>
             <script>
               const x = document.getElementById("welcome");
               function playAudio(){
                 x.play();
+              }
+              const y = document.getElementById("dilution");
+              function playAudio2(){
+                y.play();
               }
 
             </script>
