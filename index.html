@@ -231,6 +231,7 @@ a  {
                 <h3>Exposure Testing</h3>
                 <br>
                 <button class="summary" onclick="playAudio3()" type="button">Summary</button>
+                <audio id="exposure" autoplay><source src="exposure.mp3" type="audio/mp3" style="display:none;"></audio>
                 <p>
                     Hepatic panel
                     <br>
@@ -253,6 +254,10 @@ a  {
               const y = document.getElementById("dilution");
               function playAudio2(){
                 y.play();
+              }
+              const z = document.getElementById("exposure");
+              function playAudio3(){
+                z.play();
               }
 
             </script>
