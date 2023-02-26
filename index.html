@@ -243,6 +243,8 @@ a  {
                     <br>                     
                     HCV Ab
                     <br>
+                    <button class="warning" onclick="playAudio4()" type="button">Disclaimer</button>
+                    <audio id="disclaimer" autoplay><source src="disclaimer.mp3" type="audio/mp3" style="display:none;"></audio>
                     However...exposure testing can vary from case to case based on the potential sources of infection. 
                     Thus placing the order is the responsibility of the ordering physician, PEP team responder, or clinical administrator on duty. 
                     Lab personnel are not responsible for testing recommendations. 
@@ -262,6 +264,10 @@ a  {
               const z = document.getElementById("exposure");
               function playAudio3(){
                 z.play();
+              }
+              const d = document.getElementById("warning");
+              function playAudio4(){
+                d.play();
               }
 
             </script>
